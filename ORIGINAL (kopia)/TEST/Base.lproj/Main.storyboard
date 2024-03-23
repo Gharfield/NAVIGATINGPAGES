@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xif-8C-1bt">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page2 View Controller-->
+        <scene sceneID="WmW-Vb-fhF">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="xif-8C-1bt" customClass="Page2ViewController" customModule="TEST" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dqO-r3-Tbh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAZ-Dm-Fzh">
+                                <rect key="frame" x="56" y="315" width="280" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="SPARADE RECEPT">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="separatorColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SPARADERECEPT:" destination="xif-8C-1bt" eventType="touchUpInside" id="XJt-ca-j1a"/>
+                                    <action selector="minaBokmarkenButtonTapped:" destination="xif-8C-1bt" eventType="touchUpInside" id="bn1-I8-eAz"/>
+                                    <segue destination="VxX-gD-bCx" kind="push" id="Kr0-ti-NTw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqF-Mf-HjE">
+                                <rect key="frame" x="56" y="458" width="280" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="SÖK RECEPT">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="separatorColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="SÖKRECEPT:" destination="xif-8C-1bt" eventType="touchUpInside" id="ucG-cI-VLW"/>
+                                    <action selector="sokReceptButtonTapped:" destination="xif-8C-1bt" eventType="touchUpInside" id="y70-hx-Gd6"/>
+                                    <segue destination="tUl-10-Gst" kind="push" id="aF6-50-rwD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulf-zG-aXQ">
+                                <rect key="frame" x="56" y="596" width="280" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="OM RECEPTBOKEN">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="separatorColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="OMRECEPTBOKEN:" destination="xif-8C-1bt" eventType="touchUpInside" id="Jf6-IY-Iew"/>
+                                    <action selector="omReceptbokenButtonTapped:" destination="xif-8C-1bt" eventType="touchUpInside" id="jvA-RJ-5iJ"/>
+                                    <segue destination="pTY-LH-AKS" kind="push" id="7st-c7-9Hm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1C-uu-oZS">
+                                <rect key="frame" x="56" y="171" width="280" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="BLÄDDRA RECEPT">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="25"/>
+                                    <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="separatorColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="BLÄDDRARECEPT:" destination="xif-8C-1bt" eventType="touchUpInside" id="QJI-6g-bgO"/>
+                                    <action selector="bladdraReceptButtonTapped:" destination="xif-8C-1bt" eventType="touchUpInside" id="8RJ-vQ-51b"/>
+                                    <segue destination="8wT-GX-Qtf" kind="push" id="UKc-SS-G40"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PUe-iE-Ckf"/>
+                        <color key="backgroundColor" red="0.93611900252525249" green="0.88669703877116157" blue="0.78700152521669797" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="x8b-jg-BHN"/>
+                    <connections>
+                        <outlet property="BLÄDDRARECEPT" destination="k1C-uu-oZS" id="pdg-fu-AOQ"/>
+                        <outlet property="OMRECEPTBOKEN" destination="Ulf-zG-aXQ" id="Qcc-u7-h0f"/>
+                        <outlet property="SÖKRECEPT" destination="JqF-Mf-HjE" id="gEj-Vs-193"/>
+                        <outlet property="SPARADERECEPT" destination="vAZ-Dm-Fzh" id="7CN-is-Q0K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QaR-12-3iG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.58015267175568" y="-461.26760563380282"/>
+        </scene>
+        <!--Page6 View Controller-->
+        <scene sceneID="fd5-3A-PJC">
+            <objects>
+                <viewController id="pTY-LH-AKS" customClass="Page6ViewController" customModule="TEST" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uDj-D6-4ww">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2uc-ir-PLX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5gT-hg-MLd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Td-a0-pFu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376" y="-440"/>
+        </scene>
+        <!--Page5 View Controller-->
+        <scene sceneID="8pW-Lx-LRs">
+            <objects>
+                <viewController id="tUl-10-Gst" customClass="Page5ViewController" customModule="TEST" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ay-Rf-v1P">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="j64-db-VPO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jo8-dr-S1k"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iu7-df-3Se" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1318" y="265"/>
+        </scene>
+        <!--Page4 View Controller-->
+        <scene sceneID="fi7-br-bQl">
+            <objects>
+                <viewController id="VxX-gD-bCx" customClass="Page4ViewController" customModule="TEST" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GXf-w2-J2G">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GiP-7a-2Jb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LWF-Ae-8kc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TY7-7Q-ZhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="266"/>
+        </scene>
+        <!--Page3 View Controller-->
+        <scene sceneID="bSX-ZF-wWi">
+            <objects>
+                <viewController id="8wT-GX-Qtf" customClass="Page3ViewController" customModule="TEST" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3qq-tX-Vwe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JLY-TJ-Dvb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="n8N-8L-CHt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Os-tT-fWX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="249"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fiW-dS-uIv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KXs-Sz-hma" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k0c-Pi-aPF">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xif-8C-1bt" kind="relationship" relationship="rootViewController" id="qCk-KU-1WD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uxm-dw-HWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-422.13740458015263" y="-461.26760563380282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
